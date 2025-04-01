@@ -120,7 +120,7 @@ Alternatively, you can unzip the sources in a folder and type:
 License = MIT
 -------------
 
-This project is an open-source software originally written at the `Edinburgh Genome Foundry <http://genomefoundry.org>`_ by `Zulko <https://github.com/Zulko>`_ and `released on Github <https://github.com/Edinburgh-Genome-Foundry/sequenticon>`_ under the MIT license (Copyright 2018 Edinburgh Genome Foundry).
+This project is an open-source software originally written at the `Edinburgh Genome Foundry <http://genomefoundry.org>`_ by `Zulko <https://github.com/Zulko>`_ and `released on Github <https://github.com/Edinburgh-Genome-Foundry/sequenticon>`_ under the MIT license (Copyright 2018 Edinburgh Genome Foundry, University of Edinburgh).
 
 Everyone is welcome to contribute!
 

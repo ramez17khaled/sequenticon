@@ -1,4 +1,3 @@
-
 Sequenticon
 ===========
 
@@ -16,18 +15,17 @@ Sequenticon is a Python library to generate `identicons <https://en.wikipedia.or
 Infos
 -----
 
-**PIP installation:**
-
-.. code:: bash
+**PIP installation:** .. code:: bash
 
   pip install sequenticon
 
-**Github Page**
-
-`<https://github.com/Edinburgh-Genome-Foundry/sequenticon>`_
+**Github Page:** `<https://github.com/Edinburgh-Genome-Foundry/sequenticon>`_
 
 
-**License:** MIT, Copyright Edinburgh Genome Foundry
+**License:** MIT
+
+Copyright Edinburgh Genome Foundry, University of Edinburgh
+
 
 More biology software
 ---------------------
