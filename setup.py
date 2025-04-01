@@ -1,7 +1,3 @@
-import ez_setup
-
-ez_setup.use_setuptools()
-
 from setuptools import setup, find_packages
 
 exec(open("sequenticon/version.py").read())  # loads __version__
