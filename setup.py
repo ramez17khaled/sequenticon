@@ -1,10 +1,12 @@
 from setuptools import setup, find_packages
 
-exec(open("sequenticon/version.py").read())  # loads __version__
+version = {}
+with open("sequenticon/version.py") as fp:
+    exec(fp.read(), version)
 
 setup(
     name="sequenticon",
-    version=__version__,
+    version=version["__version__"],
     author="Zulko",
     description="Generate human-friendly icons from DNA sequences",
     long_description=open("pypi-readme.rst").read(),
