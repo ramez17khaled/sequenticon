@@ -1,7 +1,7 @@
 .. raw:: html
 
     <p align="center">
-    <img alt="Sequenticon Logo" title="Sequenticon" src="https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/docs/logo.png" width="550">
+    <img alt="Sequenticon Logo" title="Sequenticon" src="https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/images/logo.png" width="550">
     <br /><br />
     </p>
 
@@ -19,7 +19,7 @@ Sequenticon is a Python library to generate `identicons <https://en.wikipedia.or
 
     <br />
     <p align="center">
-    <img title="sequenticon example" src="https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/docs/ATGGTGCA_sequenticon.png" width="80"/>
+    <img title="sequenticon example" src="https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/images/ATGGTGCA_sequenticon.png" width="80"/>
     <br /><br />
     </p>
 
@@ -98,7 +98,7 @@ Here is an example PDF output from the last command (`full PDF <https://github.c
 .. raw:: html
 
     <p align="center">
-    <img alt="sequenticon Logo" title="sequenticon Logo" src="https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/docs/pdf_screenshot.png" width="381">
+    <img alt="sequenticon Logo" title="sequenticon Logo" src="https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/images/pdf_screenshot.png" width="381">
     <br /><br />
     </p>
 

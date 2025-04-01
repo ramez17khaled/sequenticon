@@ -10,7 +10,7 @@ Sequenticon
 
 Sequenticon is a Python library to generate `identicons <https://en.wikipedia.org/wiki/Identicon>`_ for DNA sequences, providing a simple visual way to instantly know that two sequences are different (different identicons) or very probably the same (same identicon), without needing to know the full sequence. For instance the sequence ``ATGGTGCA`` gets converted to the following icon:
 
-.. image:: https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/docs/ATGGTGCA_sequenticon.png
+.. image:: https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/sequenticon/master/images/ATGGTGCA_sequenticon.png
 
 Infos
 -----
