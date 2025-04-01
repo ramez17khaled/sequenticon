@@ -32,27 +32,23 @@ SETTINGS = dict(
 def sequenticon(sequence, output_format="png", size=60, output_path=None):
     """Return sequenticon image data for the provided sequence.
 
-    Note: to change the number of rows and columns, or the colors of the
-    sequenticon, change the values in ``sequenticons.SETTINGS``
+    Note: to change the number of rows and columns, or the colors of the sequenticon,
+    change the values in `sequenticons.SETTINGS`.
 
     Parameters
     ----------
-
-    sequence
-      A string, for instance "ATTGTGCGTGTGC". Sequenticon is case-insensitive
-      and will upper-case the full sequence.
-
-    output_format
-      One of "png", "base64", "html_image". If "png", raw PNG image data is
-      returned (as bytes). If base64, the png data is base64-encoded (string),
-      and if html_image, the returned string is ``<img src='data:X'/>`` where
-      X is base64 image data (this string is ready to be used in a webpage).
-
-    size
-      The sequenticon image will be of dimensions (size x size), in pixels.
-
-    output_path
-      Optional path to a PNG file to which to write the sequenticon.
+    sequence : str
+        A string, for instance "ATTGTGCGTGTGC". Sequenticon is case-insensitive and will
+        upper-case the full sequence.
+    output_format : str
+        One of "png", "base64", "html_image". If "png", raw PNG image data is returned
+        (as bytes). If "base64", the png data is base64-encoded (as a string), and if
+        "html_image", the returned string is `<img src='data:X'/>` where X is the base64
+        image data (this string is ready to be used in a webpage).
+    size : int
+        The sequenticon image will be of dimensions (size x size), in pixels.
+    output_path : str, optional
+        Optional path to a PNG file to which to write the sequenticon.
     """
     if hasattr(sequence, "seq"):
         sequence = str(sequence.seq)
@@ -75,29 +71,23 @@ def sequenticon_batch(sequences, output_format="png", size=60, output_path=None)
 
     Parameters
     ----------
-
-    sequences
-      A list of either ``name, sequence`` tuples, or Biopython records (with
-      different IDs), or paths to genbank or fasta files containing one or
-      more record each.
-
-     output_format
-      One of "png", "base64", "html_image". If "png", raw PNG image data is
-      returned (as bytes). If base64, the png data is base64-encoded (string),
-      and if html_image, the returned string is ``<img src='data:X'/>`` where
-      X is base64 image data (this string is ready to be used in a webpage).
-
-    size
-      The sequenticon image will be of dimensions (size x size), in pixels.
-
-    target
-      An optional folder or zip path in which to write the PNG files.
+    sequences : list
+        A list of either `name, sequence` tuples, Biopython records (with different IDs),
+        or paths to GenBank or FASTA files containing one or more records each.
+    output_format : str
+        One of "png", "base64", "html_image". If "png", raw PNG image data is returned
+        (as bytes). If "base64", the PNG data is base64-encoded (as a string), and if
+        "html_image", the returned string is `<img src='data:X'/>` where X is the base64
+        image data (this string is ready to be used in a webpage).
+    size : int
+        The sequenticon image will be of dimensions (size x size), in pixels.
+    target : str, optional
+        An optional folder or zip path in which to write the PNG files.
 
     Returns
     -------
-
-    sequenticons
-      A list of the form [(sequence_name, sequenticon_image_data), ...].
+    sequenticons : list of tuples
+        A list of the form [(sequence_name, sequenticon_image_data), ...].
     """
 
     if "." in sequences[0]:
@@ -128,17 +118,13 @@ def sequenticon_batch_pdf(sequences, target=None, title="Sequenticons batch"):
 
     Parameters
     ----------
-
-    sequences
-      A list of either ``name, sequence`` tuples, or Biopython records (with
-      different IDs), or paths to genbank or fasta files containing one or
-      more record each.
-
-    target
-      path to a PDF file, file-like object, or None to return raw PDF data.
-
-    title
-      Title that will appear in the document.
+    sequences : list
+        A list of either `name, sequence` tuples, Biopython records (with different IDs),
+        or paths to GenBank or FASTA files containing one or more records each.
+    target : str or file-like object, optional
+        Path to a PDF file, file-like object, or None to return raw PDF data.
+    title : str
+        Title that will appear in the document.
     """
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
     sequenticons = sequenticon_batch(sequences, output_format="html_image")
