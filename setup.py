@@ -12,7 +12,7 @@ setup(
     long_description=open("pypi-readme.rst").read(),
     license="MIT",
     keywords="DNA sequence barcoding sequenticon identicon hash",
-    packages=find_packages(exclude="docs"),
+    packages=find_packages(exclude=["docs","tests","examples"]),
     include_package_data=True,
     install_requires=[
         "Biopython",
